@@ -12,9 +12,9 @@ public class FishBehaviour : MonoBehaviour
     public float fleeSpeed = 7.0f;
     //fish movement variables, makes the fish bob up and down.
     public float frequency = 1.0f;
-    public float magnitude = 0.8f;
+    public float magnitude = 2.0f;
     //fish moves in random direction every 5 seconds.
-    public float changeDirectionTime = 5.0f;
+    public float changeDirectionTime = 7.0f;
     //fish fleeing from players variables.
     public float fleeRadius = 10.0f;
     public float fleeDuration = 5.0f;
@@ -98,7 +98,7 @@ public class FishBehaviour : MonoBehaviour
                 //Vector3 randomTorque = new Vector3(Random.Range(-torque, torque), 0, Random.Range(-torque, torque));
                 //rb.AddTorque(randomTorque);
                 transform.rotation = randomRotation;
-                timer = changeDirectionTime;
+                //timer = changeDirectionTime;
             }
 
             //allows the fish to move around.
